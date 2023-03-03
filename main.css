@@ -1,0 +1,15 @@
+
+@import url("css/body.css");
+@import url("css/header.css");
+@import url("css/statistic.css");
+@import url("css/card-box.css");
+@import url("css/missions.css");
+@import url("css/slider-project.css");
+@import url("css/skull-box.css");
+@import url("css/footer.css");
+
+
+video::-webkit-media-controls {
+    display: none;
+}
+

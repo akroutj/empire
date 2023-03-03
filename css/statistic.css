@@ -1,0 +1,39 @@
+.statistics-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    padding: 20px;
+}
+
+.up-stat-box {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.down-stat-box {
+    width: 150px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+.line {
+    size: 4px;
+    width: 80%;
+}

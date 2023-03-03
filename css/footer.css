@@ -1,0 +1,61 @@
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    width: 60%;
+}
+
+.recrute-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin: 50px;
+    height: 120px;
+}
+
+.left-container,
+.right-container {
+    border: 3px solid white;
+    padding: 40px;
+}
+
+.left-container {
+    text-align: center;
+}
+
+.right-container {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container2,
+.footer-container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.logo-footer {
+    color: white;
+    padding: 0px 40px;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 5rem;
+    margin: 100px;
+}

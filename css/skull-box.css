@@ -1,0 +1,85 @@
+
+.skull-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-top: 50px;
+}
+
+.skull-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.skull-left,
+.skull-right {
+    width: 200px;
+}
+
+.skull-box center {
+    animation: closehead;
+    animation-duration: 2s;
+}
+
+.skull-box:hover {
+    width: 100%;
+    justify-content: center;
+}
+
+.text-appear-box {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+}
+
+.text-appear-box h3 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.subscribe-button {
+    width: 200px;
+    padding: 10px 20px;
+    margin: 40px;
+    cursor: pointer;
+}
+
+.skull-box:hover .text-appear-box {
+    display: flex;
+    animation: openhead;
+    animation-duration: 2.2s;
+}
+
+@keyframes openhead {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+
+    70% {
+        opacity: 0.5;
+        width: 100%;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes closehead {
+    0% {
+        opacity: 1;
+        width: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
