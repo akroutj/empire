@@ -5,13 +5,19 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
+}
+
+.slider h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
 }
   
 .slides-box {
     width: 500%;
-    height: 500px;
     display: flex;
+    margin-bottom: 60px;
 }
   
 .slides-box input {
@@ -27,18 +33,19 @@
 }
       
 .slider-navigation {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 100px;
+    margin: 20px 20px ;
 }
   
 .navigation-btn {
-    font-size: 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
     cursor: pointer;
     transition: 1s;
-    padding: 10px;
+    padding: 6px;
 }
   
 .navigation-btn:not(:last-child) {
@@ -46,7 +53,7 @@
 }
   
 .navigation-btn:hover {
-    background-color: lightblue;
+    background-color: rgba(0, 0, 0, 0.4);
 }
        
 #radio1:checked~.first {
@@ -85,9 +92,8 @@
 }
 
 .death-star-image {
-    width: 400px;
-    border-radius: 50%;
-    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    filter: drop-shadow(30px 30px 20px rgba(0, 0, 0, 0.4));
 }
 
 .death-star-text {
@@ -109,3 +115,4 @@
     font-size: 2rem;
     margin-bottom: 50px;
 }
+

@@ -17,11 +17,6 @@
     width: 200px;
 }
 
-.skull-box center {
-    animation: closehead;
-    animation-duration: 2s;
-}
-
 .skull-box:hover {
     width: 100%;
     justify-content: center;
@@ -36,6 +31,8 @@
     padding: 30px;
     text-align: center;
     width: 80%;
+    animation: closehead;
+    animation-duration: 2s;
 }
 
 .text-appear-box h3 {

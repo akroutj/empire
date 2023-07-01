@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;1,8..144,100;1,8..144,300&display=swap"
     rel="stylesheet" />
   <title>L'empire recrute</title>
+  <script defer src="index.js"></script>
 </head>
 
 <body>
@@ -52,10 +53,12 @@
 
   <!-- STATISTICS -->
 
-  <article class="statistics-container">
+  <article class="statistics-container reveal">
+
     <div class="stat-box">
       <div class="up-stat-box">
-        <p>58%</p>
+        <span id="count1"></span>
+        <p>%</p>
       </div>
       <div class="down-stat-box">
         <p>des soldats du rang deviennent sous-officiers</p>
@@ -63,7 +66,8 @@
     </div>
     <div class="stat-box">
       <div class="up-stat-box">
-        <p>+ de 100</p>
+        <p>+ de </p>
+        <span id="count2"></span>
       </div>
       <div class="down-stat-box">
         <p>spécialitées</p>
@@ -71,7 +75,8 @@
     </div>
     <div class="stat-box">
       <div class="up-stat-box">
-        <p>20%</p>
+        <span id="count3"></span>
+        <p>%</p>
       </div>
       <div class="down-stat-box">
         <p>du temps consacré à la formation</p>
@@ -81,7 +86,7 @@
 
   <!-- CARD BOX -->
 
-  <div class="cards-container">
+  <div class="cards-container reveal">
     <div class="card-box">
       <div class="image-card-box">
         <img src="public\storm-action.jpg" alt="">
@@ -146,59 +151,69 @@
   <!-- SLIDER PROJECT -->
 
   <div class="slider">
-    <div class="slides-box">
-      <input type="radio" name="radio-btn" id="radio1" />
-      <input type="radio" name="radio-btn" id="radio2" />
-      <input type="radio" name="radio-btn" id="radio3" />
-      <input type="radio" name="radio-btn" id="radio4" />
-      <input type="radio" name="radio-btn" id="radio5" />
 
-      <div class="first slide">
-        <div class="death-star-text">
-          <h4>L'ETOILE NOIRE</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, culpa perferendis temporibus quas
-            earum
-            maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
-            repudiandae.</p>
-        </div>
-        <div class="death-star-image-container">
-          <img class="death-star-image" src="public/etoile.jpg" alt="">
-        </div>
-
-      </div>
-      <div class="slide">
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210105130614/img2.PNG" alt="" />
-      </div>
-      <div class="slide">
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210105130615/img3.PNG" alt="" />
-      </div>
-      <div class="slide">
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210105130616/img4.PNG" alt="" />
-      </div>
-      <div class="slide">
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210105130617/img5.PNG" alt="" />
-      </div>
-    </div>
+    <h3>DES PROJETS AMBITIEUX</h3>
 
     <!-- Navigation slider -->
 
     <div class="slider-navigation">
       <label for="radio1" class="navigation-btn">
-        <i class="fab logo-empire fa-galactic-republic"> Galactic empire</i>
+        <!-- <i class="fab logo-empire fa-galactic-republic"> Galactic empire</i> -->
       </label>
       <label for="radio2" class="navigation-btn">
-        <img src="public/Death-Star-icon_34500.png" alt="">
+        <!-- <img src="public/Death-Star-icon_34500.png" alt=""> -->
       </label>
       <label for="radio3" class="navigation-btn">
-        <i class="fab fa-jedi-order"> Jedi order</i>
-      </label>
-      <label for="radio4" class="navigation-btn">
-        <i class="fas fa-vial"> Chemical</i>
-      </label>
-      <label for="radio5" class="navigation-btn">
-        <i class="fab logo-senate fa-galactic-senate"> Galactic senate</i>
+        <!-- <i class="fab fa-jedi-order"> Jedi order</i> -->
       </label>
     </div>
+  </div>
+
+  <div class="slides-box">
+    <input type="radio" name="radio-btn" id="radio1" />
+    <input type="radio" name="radio-btn" id="radio2" />
+    <input type="radio" name="radio-btn" id="radio3" />
+
+    <div class="first slide">
+      <div class="death-star-text">
+        <h4>L'ETOILE NOIRE</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, culpa perferendis temporibus quas
+          earum
+          maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
+          repudiandae.</p>
+      </div>
+      <div class="death-star-image-container">
+        <img class="death-star-image" src="public/etoile2.png" alt="">
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="death-star-text">
+        <h4>L'ORDRE JEDI</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, culpa perferendis temporibus quas
+          earum
+          maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
+          repudiandae.</p>
+      </div>
+      <div class="death-star-image-container">
+        <img class="death-star-image" src="public/jedi.png" alt="">
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="death-star-text">
+        <h4>CLONAGE</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, culpa perferendis temporibus quas
+          earum
+          maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
+          repudiandae.</p>
+      </div>
+      <div class="death-star-image-container">
+        <img class="death-star-image" src="public/helmet2.png" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
   </div>
 
   <!-- SKULL CONTAINER -->
