@@ -18,13 +18,13 @@ header {
     font-size: 3rem;
     transform: rotate(-90deg);
     margin-right: 7px;
-    color: var(--primary)
+    color: black
 }
 
 .topbar__title {
     font-size: 1.7rem;
     font-family: 'Cinzel', serif;
-    color: var(--primary)
+    color: black
 }
 
 .topbar__button {
