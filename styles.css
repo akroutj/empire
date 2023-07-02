@@ -3,8 +3,8 @@
 @import url("css/header.css");
 @import url("css/statistic.css");
 @import url("css/card-box.css");
-@import url("css/formation.css");
-@import url("css/slider-project.css");
+@import url("css/training.css");
+@import url("css/project.css");
 @import url("css/skull-box.css");
 @import url("css/footer.css");
 @import url("css/animation.css");
@@ -27,10 +27,11 @@ body, * {
 }
 
 :root {
-    --primary: rgba(75,95,96,255);
+    --primary: cadetblue;
     --secondary: #c8cdd1;
     --grey: rgb(255, 255, 255, 0.3);
     --neoShadow: 4px 4px 16px rgba(0, 0, 0, 0.5),
         -4px -4px 16px rgba(255, 255, 255, 0.05);
 }
+
 

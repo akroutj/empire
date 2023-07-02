@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="main.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/fd74157818.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,9 +21,12 @@
   <header>
     <div class="topbar">
       <i class="topbar__logo fab fa-galactic-senate"></i>
-      <h1 class="topbar__title">galactic empire</h1>
+      <h1 class="topbar__title">galactic</h1>
+      <h1 class="topbar__title empire">empire</h1>
+
       <button class="topbar__button">JOIN US</button>
     </div>
+
 
     <!-- Burger menu -->
 
@@ -42,6 +45,7 @@
   </header>
 
   <!-- STATISTICS -->
+
   <div class="stats">
     <h2 class="stats__title">L'empire galactique</h2>
     <p class="stats__subtitle">- un employeur de référence -</p>
@@ -49,31 +53,33 @@
     <article class="statistics-container reveal">
 
       <div class="stat-box">
-        <div class="up-stat-box">
+        <div class="stat-box__up">
           <span id="count1"></span>
           <p>%</p>
         </div>
         <hr class="stat-box-line">
-        <div class="down-stat-box">
+        <div class="stat-box__down">
           <p>des soldats deviennent sous-officiers</p>
         </div>
       </div>
+
       <div class="stat-box">
-        <div class="up-stat-box">
+        <div class="stat-box__up">
           <span id="count2"></span>
         </div>
         <hr class="stat-box-line">
-        <div class="down-stat-box">
+        <div class="stat-box__down">
           <p>spécialitées</p>
         </div>
       </div>
+
       <div class="stat-box">
-        <div class="up-stat-box">
+        <div class="stat-box__up">
           <span id="count3"></span>
           <p>%</p>
         </div>
         <hr class="stat-box-line">
-        <div class="down-stat-box">
+        <div class="stat-box__down">
           <p>du temps consacré à la formation</p>
         </div>
       </div>
@@ -82,18 +88,20 @@
     <button class="stats__button">L'empire en chiffres</button>
   </div>
 
-  <!-- CARD BOX -->
+  <!-- MISSIONS-->
+
   <div class="missions">
+
     <h2 class="missions__title">Des Missions</h2>
     <p class="missions__subtitle">- dans toute la galaxie -</p>
+
     <div class="cards-container reveal">
 
-
       <div class="card-box">
-        <div class="image-card-box">
+        <div class="card-box__image">
           <img src="public\storm-action.jpg" alt="">
         </div>
-        <div class="text-card-box">
+        <div class="card-box__overlay">
           <div>
             <h2>Image Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
@@ -101,11 +109,12 @@
           </div>
         </div>
       </div>
+
       <div class="card-box">
-        <div class="image-card-box">
+        <div class="card-box__image">
           <img src="public\blue.jpg" alt="">
         </div>
-        <div class="text-card-box">
+        <div class="card-box__overlay">
           <div>
             <h2>Image Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
@@ -113,11 +122,12 @@
           </div>
         </div>
       </div>
+
       <div class="card-box">
-        <div class="image-card-box">
+        <div class="card-box__image">
           <img src="public\army-field.jpg" alt="">
         </div>
-        <div class="text-card-box">
+        <div class="card-box__overlay">
           <div>
             <h2>Image Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
@@ -125,11 +135,12 @@
           </div>
         </div>
       </div>
+
       <div class="card-box">
-        <div class="image-card-box">
+        <div class="card-box__image">
           <img src="public\lunch.jpeg" alt="">
         </div>
-        <div class="text-card-box">
+        <div class="card-box__overlay">
           <div>
             <h2>Image Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
@@ -138,27 +149,29 @@
         </div>
       </div>
     </div>
-    <button class="stats__button">+ de missions</button>
+
+    <button class="missions__button">+ de missions</button>
+
   </div>
 
   <!-- VIDEO -->
 
-  <div class="videobox">
+  <!-- <div class="video-box">
     <video width="100%" autoplay loop muted>
       <source src="public/wars.mp4" type="video/mp4">
     </video>
-  </div>
+  </div> -->
 
-  <!-- MISSIONS -->
+  <!-- TRAINING -->
 
-  <div class="formation">
-    <h2 class="formation__title">Formation</h2>
-    <p class="formation__subtitle">- Un enseignement unique -
+  <div class="training">
+    <h2 class="training__title">Formation</h2>
+    <p class="training__subtitle">- Un enseignement unique -
     <p>
 
   </div>
 
-  <!-- SLIDER PROJECT -->
+  <!-- PROJECTS -->
 
   <div class="slider">
     <h3>DES PROJETS AMBITIEUX</h3>
@@ -201,6 +214,7 @@
             earum
             maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
             repudiandae.</p>
+          <hr class="death-star-text-hr">
         </div>
         <div class="death-star-image-container">
           <img class="death-star-image" src="public/jedi.png" alt="">
@@ -214,6 +228,7 @@
             earum
             maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
             repudiandae.</p>
+          <hr class="death-star-text-hr">
         </div>
         <div class="death-star-image-container">
           <img class="death-star-image" src="public/helmet2.png" alt="">
@@ -224,12 +239,16 @@
 
   </div>
 
-  <!-- SKULL CONTAINER -->
+  <!-- SKULL -->
 
   <div class="skull-container">
+
     <div class="skull-box">
+
       <h1 class="neo">NEED</h1>
+
       <img class="skull-left" src="public/head-left1.png" alt="">
+
       <div class="text-appear-box">
         <div class="text-appear">
           <h3> DEVENIR STORMTROOPER</h3>
@@ -250,13 +269,13 @@
   <!-- FOOTER -->
 
   <footer>
-    <div class="recrute-container">
-      <div class="left-container">
+    <div class="recrute">
+      <div class="recrute__left">
         <p>L'EMPIRE</p>
         <hr />
         <p>recrute et forme</p>
       </div>
-      <div class="right-container">
+      <div class="recrute__right">
         <p>16 000 postes</p>
       </div>
     </div>
@@ -273,7 +292,7 @@
       <p>plan du site</p>
     </div>
 
-    <div class="footer-logo-container">
+    <div class="footer-container4">
       <i class="fab logo-footer fa-galactic-republic"></i>
       <hr />
       <i class="fab logo-footer fa-galactic-senate"></i>

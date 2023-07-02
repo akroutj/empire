@@ -1,11 +1,4 @@
 
-.cards-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 .missions {
     display: flex;
     flex-direction: column;
@@ -15,14 +8,23 @@
 
 .missions__title {
     font-size: 3rem;
-    color: cadetblue;
+    color: var(--primary);
 }
 
 .missions__subtitle {
     font-size: 1.5rem;
 }
 
-.cards-container .card-box {
+/*  CARD BOX  */
+
+.cards-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-box {
     position: relative;
     width: 275px;
     height: 275px;
@@ -33,12 +35,7 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.cards-container .card-box:hover {
-    transform: scale(1.25);
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-}
-
-.cards-container .card-box .image-card-box img {
+.card-box__image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,7 +44,14 @@
     object-fit: cover;
 }
 
-.cards-container .card-box .text-card-box {
+.card-box:hover {
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* OVERLAY */
+
+.card-box__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -56,11 +60,13 @@
     display: flex;
     padding: 20px;
     align-items: flex-end;
+    color: #fff;
+    transform: translateY(350px);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.cards-container .card-box .text-card-box h2 {
-    color: #fff;
-    transition: 0.5s;
+.card-box__overlay h2 {
+    transition: 0.3s;
     text-transform: uppercase;
     margin-bottom: 5px;
     font-size: 20px;
@@ -68,22 +74,39 @@
     transition-delay: 0.3s;
 }
 
-.cards-container .card-box:hover .text-card-box h2 {
-    transform: translateY(0px);
-}
-
-.cards-container .card-box .text-card-box p {
-    color: #fff;
-    transition: 0.5s;
+.card-box__overlay p {
+    transition: 0.3s;
     font-size: 14px;
     transform: translateY(200px);
     transition-delay: 0.4s;
 }
 
-.cards-container .card-box:hover .text-card-box p {
+/* HOVER */
+
+.card-box:hover .card-box__overlay h2 {
     transform: translateY(0px);
 }
 
-.testo {
-    margin-left: -250px;
+.card-box:hover .card-box__overlay p {
+    transform: translateY(0px);
 }
+
+.card-box:hover .card-box__overlay  {
+    transform: translateY(0px);
+}
+
+.missions__button {
+    padding: 15px 20px;
+    font-family: 'Cinzel';
+    font-size: 1.2rem;
+    background-color: white;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px lightgray;
+    transition-duration: 200ms;
+}
+
+.missions__button:hover {
+    box-shadow: none;
+}
+

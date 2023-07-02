@@ -2,9 +2,8 @@
 .skull-container {
     display: flex;
     justify-content: center;
-    background-color: black;
     padding-top: 50px;
-    background-color: cadetblue;
+    background-color: var(--primary) ;
 }
 
 .skull-box {

@@ -1,11 +1,8 @@
 
-/* SLIDER */
-
 .slider {
     overflow: hidden;
     position: relative;
     width: 100%;
-    /* height: 700px; */
     box-shadow: 2px 4px 36px black;
 }
 
@@ -13,7 +10,7 @@
     font-size: 3rem;
     text-align: center;
     margin: 30px;
-    color: cadetblue;
+    color: var(--primary);
 }
   
 .slides-box {
@@ -35,7 +32,6 @@
 }
       
 .slider-navigation {
-    /* position: absolute; */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -110,7 +106,7 @@
     margin-top: 40px;
     width: 20%;
     height: 4px;
-    background-color: cadetblue;
+    background-color: var(--primary);
 }
 
 .death-star-text p {
@@ -120,7 +116,7 @@
 .death-star-text h4 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color: cadetblue;
+    color: var(--primary);
 }
 
 .projet-container h3 {

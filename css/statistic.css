@@ -6,16 +6,12 @@
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
-    /* background-color: black; */
-        margin: 50px;
+    margin: 50px;
     box-shadow: 0px 0px 30px lightgray;
     border-radius: 20px;
 }
 
-
-
 .stats__title {
-    /* font-family:fantasy; */
     font-size: 3rem;
     color: cadetblue;
     filter: drop-shadow(3px 3px 10px lightgray);
@@ -25,19 +21,13 @@
     font-size: 1.5rem;
 }
 
-.stats__button {
-    padding: 15px 20px;
-    font-family: 'Cinzel';
-    font-size: 1.2rem;
-    background-color: transparent;
-    /* margin: 0px 0; */
-}
+/* STAT BOX */
 
 .statistics-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 20px;
+    margin: 20px 0 40px 0;
 }
 
 .stat-box {
@@ -46,34 +36,40 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 200px;
+    height: 220px;
     padding: 20px;
     margin: 0 20px;
+    transition-duration: 200ms;
 }
 
-.up-stat-box > span {
+.stat-box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px lightgray;
+}
+
+.stat-box__up > span {
     font-family: fantasy;
     filter: drop-shadow(1px 5px 0px lightgray);
-    color: cadetblue;
+    color: var(--primary);
 }
 
-.up-stat-box {
+.stat-box__up {
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 5rem;
-    /* color: var(--primary) */
 }
 
-.up-stat-box > p {
+.stat-box__up > p {
     font-size: 3rem;
     margin-left: 10px;
-    color: cadetblue;
+    color: var(--primary);
 }
 
-.down-stat-box {
+.stat-box__down {
     width: 150px;
     height: 50%;
     display: flex;
@@ -81,17 +77,35 @@
     align-items: center;
 }
 
-.down-stat-box > p {
+.stat-box__down > p {
     font-family: 'PT Sans', sans-serif;
-    /* color: var(--primary); */
 }
 
-
+/* LINE */
 
 .stat-box-line {
     height: 3px;
-    background-color: black;
+    background-color: var(--primary);
     width: 80%;
     border: none;
     margin: 10px 0;
 }
+
+/* BUTTON */
+
+.stats__button {
+    padding: 15px 20px;
+    font-family: 'Cinzel';
+    font-size: 1.2rem;
+    background-color: white;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px lightgray;
+    transition-duration: 200ms;
+}
+
+.stats__button:hover {
+    box-shadow: none;
+}
+
+

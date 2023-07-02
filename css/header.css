@@ -1,47 +1,48 @@
 
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
-    background-image: url(../public/blue.jpeg);
+    background-image: url(../public/blue2.png);
+    background-color: cadetblue;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 10px 10px 10px lightgray;
 }
 
 .topbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
+    width: 40%;
+    text-align: center;
+    /* margin-left: -600px; */
 }
 
 .topbar__logo {
-    font-size: 3rem;
-    transform: rotate(-90deg);
-    margin-right: 7px;
-    color: black
+    color: orange;
+    font-size: 5rem;
+    filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.4));
 }
 
 .topbar__title {
-    font-size: 1.7rem;
-    font-family: 'Cinzel', serif;
-    color: black
+    color: var(--primary);
+    font-size: 6rem;
+    text-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.empire {
+    margin-top: -30px;
 }
 
 .topbar__button {
     border: none;
-    margin-left: 30px;
+    font-family: 'Bebas Neue', sans-serif;
     background-color: orange;
-    opacity: 0.8;
+    color: var(--primary);
     border-radius: 5px;
-    padding: 8px;
-    font-size: 1rem;
+    padding: 10px 20px;
+    font-size: 3rem;
     cursor: pointer;
-}
-
-.topbar__button:hover {
-    transform: scale(1.1);
-    background-color: transparent;
-    color: orange;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
 }
 
 /* BURGER MENU */
