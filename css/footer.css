@@ -1,5 +1,5 @@
 footer {
-    background-color: black;
+    background-color: cadetblue;
     color: white;
     display: flex;
     flex-direction: column;
@@ -20,31 +20,40 @@ footer {
     height: 120px;
 }
 
+.hr  {
+    width: 150px;
+    padding-top: 1px;
+    margin: 5px 0;
+    background-color: white;
+    border: none;
+}
+
 .left-container,
 .right-container {
     border: 3px solid white;
-    padding: 40px;
-}
-
-.left-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .right-container {
     background-color: white;
     color: black;
-    display: flex;
-    align-items: center;
 }
 
 .footer-container2,
 .footer-container3 {
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 1.1rem;
     padding: 10px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .logo-footer {
@@ -57,5 +66,19 @@ footer {
     flex-direction: row;
     justify-content: center;
     font-size: 5rem;
-    margin: 100px;
+    margin: 50px 0;
+}
+
+@media screen and (max-width: 730px) {
+    .footer-container2, .footer-container3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+  
+.footer-container2,
+.footer-container3 {
+    flex-direction: column;
+}
 }

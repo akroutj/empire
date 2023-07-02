@@ -3,14 +3,34 @@
 @import url("css/header.css");
 @import url("css/statistic.css");
 @import url("css/card-box.css");
-@import url("css/missions.css");
+@import url("css/formation.css");
 @import url("css/slider-project.css");
 @import url("css/skull-box.css");
 @import url("css/footer.css");
 @import url("css/animation.css");
+@import url("css/video.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h1, h2, h3, h4 {
+    font-family: 'Bebas Neue', sans-serif;
+}
 
 video::-webkit-media-controls {
     display: none;
+}
+
+body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgba(75,95,96,255);
+    --secondary: #c8cdd1;
+    --grey: rgb(255, 255, 255, 0.3);
+    --neoShadow: 4px 4px 16px rgba(0, 0, 0, 0.5),
+        -4px -4px 16px rgba(255, 255, 255, 0.05);
 }
 

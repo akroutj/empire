@@ -4,17 +4,28 @@
     justify-content: center;
     background-color: black;
     padding-top: 50px;
+    background-color: cadetblue;
 }
 
 .skull-box {
     display: flex;
     width: 100%;
     justify-content: center;
+    filter: drop-shadow(2px 44px 36px black);
+}
+
+.neo {
+    margin: 150px 20px 0 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: cadetblue;
+    font-size: 5rem;
+    /* text-shadow: -8px -8px 12px rgba(255, 255, 255, 0.4), 8px 8px 12px rgba(0, 0, 0, 0.8); */
 }
 
 .skull-left,
 .skull-right {
     width: 200px;
+    
 }
 
 .skull-box:hover {

@@ -10,7 +10,6 @@ const handleIntersect = function (entries, observer) {
     if (entry.intersectionRatio > ratio) {
       entry.target.classList.add("reveal-visible");
       entry.target.classList.add("left-visible");
-      //   entry.target.classList.add("anim-card-visible");
       observer.unobserve(entry.target);
     }
   });
@@ -23,9 +22,6 @@ document.querySelectorAll(".reveal").forEach(function (r) {
 document.querySelectorAll(".left").forEach(function (r) {
   observer.observe(r);
 });
-// document.querySelector(".anim-card").forEach(function (r) {
-//   observer.observe(r);
-// });
 
 //CUNTER
 
@@ -45,6 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }, step);
   }
   counter("count1", 0, 58, 1000);
-  counter("count2", 0, 100, 1000);
+  counter("count2", 0, 32, 1000);
   counter("count3", 0, 20, 1000);
 });

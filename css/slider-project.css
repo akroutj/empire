@@ -6,12 +6,14 @@
     position: relative;
     width: 100%;
     /* height: 700px; */
+    box-shadow: 2px 4px 36px black;
 }
 
 .slider h3 {
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 30px;
+    color: cadetblue;
 }
   
 .slides-box {
@@ -97,8 +99,18 @@
 }
 
 .death-star-text {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
     width: 50%;
+}
+
+.death-star-text-hr {
+    margin-top: 40px;
+    width: 20%;
+    height: 4px;
+    background-color: cadetblue;
 }
 
 .death-star-text p {
@@ -108,6 +120,7 @@
 .death-star-text h4 {
     font-size: 2rem;
     margin-bottom: 30px;
+    color: cadetblue;
 }
 
 .projet-container h3 {

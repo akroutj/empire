@@ -18,15 +18,12 @@
 
 <body>
 
-  <!-- HEADER -->
-
   <header>
-    <div class="top-bar-title">
-      <i class="header-logo fab fa-galactic-senate"></i>
-      <h1 class="header-title">galactic empire</h1>
-      <h2 class="join-us">JOIN US</h2>
+    <div class="topbar">
+      <i class="topbar__logo fab fa-galactic-senate"></i>
+      <h1 class="topbar__title">galactic empire</h1>
+      <button class="topbar__button">JOIN US</button>
     </div>
-
 
     <!-- Burger menu -->
 
@@ -35,127 +32,136 @@
       <label class="menu-button" for="menu-toggle">
         <span></span>
       </label>
-
       <ul class="menu-box">
-        <li><a class="menu-box-item" href="#">Home</a></li>
-        <li><a class="menu-box-item" href="#">Formations</a></li>
+        <li><a class="menu-box-item" href="#">L'empire en chiffres</a></li>
         <li><a class="menu-box-item" href="#">Missions</a></li>
+        <li><a class="menu-box-item" href="#">Projets</a></li>
         <li><a class="menu-box-item" href="#">Stormtrooper</a></li>
-        <li><a class="menu-box-item" href="#">Contacts</a></li>
       </ul>
     </div>
-
   </header>
 
-  <div class="main-image-container">
-    <img class="main-image" src="public\blue.jpeg" alt="stormtroopers" />
+  <!-- STATISTICS -->
+  <div class="stats">
+    <h2 class="stats__title">L'empire galactique</h2>
+    <p class="stats__subtitle">- un employeur de référence -</p>
+
+    <article class="statistics-container reveal">
+
+      <div class="stat-box">
+        <div class="up-stat-box">
+          <span id="count1"></span>
+          <p>%</p>
+        </div>
+        <hr class="stat-box-line">
+        <div class="down-stat-box">
+          <p>des soldats deviennent sous-officiers</p>
+        </div>
+      </div>
+      <div class="stat-box">
+        <div class="up-stat-box">
+          <span id="count2"></span>
+        </div>
+        <hr class="stat-box-line">
+        <div class="down-stat-box">
+          <p>spécialitées</p>
+        </div>
+      </div>
+      <div class="stat-box">
+        <div class="up-stat-box">
+          <span id="count3"></span>
+          <p>%</p>
+        </div>
+        <hr class="stat-box-line">
+        <div class="down-stat-box">
+          <p>du temps consacré à la formation</p>
+        </div>
+      </div>
+
+    </article>
+    <button class="stats__button">L'empire en chiffres</button>
   </div>
 
-  <!-- STATISTICS -->
-
-  <article class="statistics-container reveal">
-
-    <div class="stat-box">
-      <div class="up-stat-box">
-        <span id="count1"></span>
-        <p>%</p>
-      </div>
-      <div class="down-stat-box">
-        <p>des soldats du rang deviennent sous-officiers</p>
-      </div>
-    </div>
-    <div class="stat-box">
-      <div class="up-stat-box">
-        <p>+ de </p>
-        <span id="count2"></span>
-      </div>
-      <div class="down-stat-box">
-        <p>spécialitées</p>
-      </div>
-    </div>
-    <div class="stat-box">
-      <div class="up-stat-box">
-        <span id="count3"></span>
-        <p>%</p>
-      </div>
-      <div class="down-stat-box">
-        <p>du temps consacré à la formation</p>
-      </div>
-    </div>
-  </article>
-
   <!-- CARD BOX -->
+  <div class="missions">
+    <h2 class="missions__title">Des Missions</h2>
+    <p class="missions__subtitle">- dans toute la galaxie -</p>
+    <div class="cards-container reveal">
 
-  <div class="cards-container reveal">
-    <div class="card-box">
-      <div class="image-card-box">
-        <img src="public\storm-action.jpg" alt="">
+
+      <div class="card-box">
+        <div class="image-card-box">
+          <img src="public\storm-action.jpg" alt="">
+        </div>
+        <div class="text-card-box">
+          <div>
+            <h2>Image Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="text-card-box">
-        <div>
-          <h2>Image Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
-          </p>
+      <div class="card-box">
+        <div class="image-card-box">
+          <img src="public\blue.jpg" alt="">
+        </div>
+        <div class="text-card-box">
+          <div>
+            <h2>Image Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-box">
+        <div class="image-card-box">
+          <img src="public\army-field.jpg" alt="">
+        </div>
+        <div class="text-card-box">
+          <div>
+            <h2>Image Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-box">
+        <div class="image-card-box">
+          <img src="public\lunch.jpeg" alt="">
+        </div>
+        <div class="text-card-box">
+          <div>
+            <h2>Image Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="card-box">
-      <div class="image-card-box">
-        <img src="public\blue.jpg" alt="">
-      </div>
-      <div class="text-card-box">
-        <div>
-          <h2>Image Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card-box">
-      <div class="image-card-box">
-        <img src="public\army-field.jpg" alt="">
-      </div>
-      <div class="text-card-box">
-        <div>
-          <h2>Image Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card-box">
-      <div class="image-card-box">
-        <img src="public\lunch.jpeg" alt="">
-      </div>
-      <div class="text-card-box">
-        <div>
-          <h2>Image Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
-          </p>
-        </div>
-      </div>
-    </div>
+    <button class="stats__button">+ de missions</button>
   </div>
 
   <!-- VIDEO -->
 
-  <video width="100%" autoplay loop muted>
-    <source src="public/wars.mp4" type="video/mp4">
-  </video>
+  <div class="videobox">
+    <video width="100%" autoplay loop muted>
+      <source src="public/wars.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <!-- MISSIONS -->
 
-  <div class="missions-container">
+  <div class="formation">
+    <h2 class="formation__title">Formation</h2>
+    <p class="formation__subtitle">- Un enseignement unique -
+    <p>
+
   </div>
 
   <!-- SLIDER PROJECT -->
 
   <div class="slider">
-
     <h3>DES PROJETS AMBITIEUX</h3>
-
-    <!-- Navigation slider -->
-
     <div class="slider-navigation">
       <label for="radio1" class="navigation-btn">
         <!-- <i class="fab logo-empire fa-galactic-republic"> Galactic empire</i> -->
@@ -167,107 +173,113 @@
         <!-- <i class="fab fa-jedi-order"> Jedi order</i> -->
       </label>
     </div>
-  </div>
 
-  <div class="slides-box">
-    <input type="radio" name="radio-btn" id="radio1" />
-    <input type="radio" name="radio-btn" id="radio2" />
-    <input type="radio" name="radio-btn" id="radio3" />
+    <div class="slides-box">
+      <input type="radio" name="radio-btn" id="radio1" />
+      <input type="radio" name="radio-btn" id="radio2" />
+      <input type="radio" name="radio-btn" id="radio3" />
 
-    <div class="first slide">
-      <div class="death-star-text">
-        <h4>L'ETOILE NOIRE</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, culpa perferendis temporibus quas
-          earum
-          maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
-          repudiandae.</p>
+      <div class="first slide">
+        <div class="death-star-text">
+          <h4>L'ETOILE NOIRE</h4>
+          <p>L'Étoile noire est dotée d'armes très puissantes, notamment un super-laser Mark 1 capable de détruire un
+            planète
+            entière en un seul tir, 15000 batteries de turbolaser — dont 5000 batteries lourdes, 2500 canons à ions et
+            700 rayons
+            tracteurs.</p>
+          <hr class="death-star-text-hr">
+        </div>
+        <div class="death-star-image-container">
+          <img class="death-star-image" src="public/etoile2.png" alt="">
+        </div>
       </div>
-      <div class="death-star-image-container">
-        <img class="death-star-image" src="public/etoile2.png" alt="">
+
+      <div class="slide">
+        <div class="death-star-text">
+          <h4>L'ORDRE JEDI</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, culpa perferendis temporibus quas
+            earum
+            maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
+            repudiandae.</p>
+        </div>
+        <div class="death-star-image-container">
+          <img class="death-star-image" src="public/jedi.png" alt="">
+        </div>
       </div>
+
+      <div class="slide">
+        <div class="death-star-text">
+          <h4>CLONAGE</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, culpa perferendis temporibus quas
+            earum
+            maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
+            repudiandae.</p>
+        </div>
+        <div class="death-star-image-container">
+          <img class="death-star-image" src="public/helmet2.png" alt="">
+        </div>
+      </div>
+
     </div>
 
-    <div class="slide">
-      <div class="death-star-text">
-        <h4>L'ORDRE JEDI</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, culpa perferendis temporibus quas
-          earum
-          maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
-          repudiandae.</p>
-      </div>
-      <div class="death-star-image-container">
-        <img class="death-star-image" src="public/jedi.png" alt="">
-      </div>
-    </div>
-
-    <div class="slide">
-      <div class="death-star-text">
-        <h4>CLONAGE</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, culpa perferendis temporibus quas
-          earum
-          maxime, alias, assumenda suscipit aspernatur incidunt natus. Eius aspernatur saepe, sed ea velit dicta eum
-          repudiandae.</p>
-      </div>
-      <div class="death-star-image-container">
-        <img class="death-star-image" src="public/helmet2.png" alt="">
-      </div>
-    </div>
-  </div>
-  </div>
   </div>
 
   <!-- SKULL CONTAINER -->
 
   <div class="skull-container">
     <div class="skull-box">
-      <img class="skull-left" src="public/head-left.jpg" alt="">
+      <h1 class="neo">NEED</h1>
+      <img class="skull-left" src="public/head-left1.png" alt="">
       <div class="text-appear-box">
         <div class="text-appear">
           <h3> DEVENIR STORMTROOPER</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis non voluptates? Nisi maiores
-            repellendus
-            dolor impedit? Non quia sequi nihil temporibus fugit ullam. Iusto eum inventore natus nihil officia!</p>
+          <p>
+            "Avec son projet « Combattant Stormtrooper;», l’empire repense l’ensemble des équipements individuels du
+            combattant. Elle entend améliorer le quotidien des soldats en alliant prise en compte des besoins
+            spécifiques et
+            technologie de pointe."
+          </p>
         </div>
         <button class="subscribe-button">INSCRIPTION</button>
       </div>
-      <img class="skull-right" src="public/head-right.jpg" alt="">
+      <img class="skull-right" src="public/head-right1.png" alt="">
+      <h1 class="neo">YOU!</h1>
     </div>
   </div>
 
   <!-- FOOTER -->
 
   <footer>
-    <div class="footer-container">
-      <div class="recrute-container">
-        <div class="left-container">
-          <p>L'EMPIRE</p>
-          <hr />
-          <p>recrute et forme</p>
-        </div>
-        <div class="right-container">
-          <p>16 000 postes</p>
-        </div>
-      </div>
-
-      <div class="footer-container2">
-        <p>ECHANGER AVEC NOS SOLDATS</p>
-        <p>NOS CENTRES DE RECRUTEMENT</p>
-      </div>
-
-      <div class="footer-container3">
-        <p>mentions légale</p>
-        <p>CGU</p>
-        <p>Politique de confidentialité</p>
-        <p>plan du site</p>
-      </div>
-
-      <div class="footer-logo-container">
-        <i class="fab logo-footer fa-galactic-republic"></i>
+    <div class="recrute-container">
+      <div class="left-container">
+        <p>L'EMPIRE</p>
         <hr />
-        <i class="fab logo-footer fa-galactic-senate"></i>
+        <p>recrute et forme</p>
+      </div>
+      <div class="right-container">
+        <p>16 000 postes</p>
       </div>
     </div>
+
+    <div class="footer-container2">
+      <p>ECHANGER AVEC NOS SOLDATS</p>
+      <p>NOS CENTRES DE RECRUTEMENT</p>
+    </div>
+
+    <div class="footer-container3">
+      <p>mentions légale</p>
+      <p>CGU</p>
+      <p>Politique de confidentialité</p>
+      <p>plan du site</p>
+    </div>
+
+    <div class="footer-logo-container">
+      <i class="fab logo-footer fa-galactic-republic"></i>
+      <hr />
+      <i class="fab logo-footer fa-galactic-senate"></i>
+    </div>
   </footer>
+
 </body>
 
 </html>

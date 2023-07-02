@@ -1,60 +1,47 @@
 
 header {
-    position: absolute;
-    top: 0;
-    width: 100%;
+    height: 100vh;
+    background-image: url(../public/blue.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 10px lightgray;
+}
+
+.topbar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
+    padding: 20px;
 }
 
-.top-bar-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.header-logo {
+.topbar__logo {
     font-size: 3rem;
     transform: rotate(-90deg);
     margin-right: 7px;
-    color: black;
+    color: var(--primary)
 }
 
-.header-title {
+.topbar__title {
     font-size: 1.7rem;
     font-family: 'Cinzel', serif;
-    color: black;
+    color: var(--primary)
 }
 
-.logo-empire {
-    font-size: 2rem;
-    color: black;
-    cursor: pointer;
-}
-
-.join-us {
+.topbar__button {
+    border: none;
     margin-left: 30px;
     background-color: orange;
     opacity: 0.8;
     border-radius: 5px;
     padding: 8px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
-.join-us:hover {
+.topbar__button:hover {
     transform: scale(1.1);
     background-color: transparent;
-    color: white;
-}
-
-.main-image {
-    width: 100%;
-    object-fit: cover;
-    box-shadow: 10px 10px 10px lightgray;
+    color: orange;
 }
 
 /* BURGER MENU */
@@ -83,7 +70,7 @@ header {
 
 .menu-button {
     position: fixed;
-    top: 20px;
+    top: 40px;
     right: 20px;
     width: 26px;
     height: 26px;
